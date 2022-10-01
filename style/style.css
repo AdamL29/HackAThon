@@ -3,10 +3,143 @@
     padding: 0;
 }
 
+#logo {
+    height: 150px;
+}
+img {
+    height: 35vh;
+}
+
+/* to be removed later */
+body {
+    border: 2px solid blue;
+}
 html {
-background-color: whitesmoke;
+    background-color: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    border: 2px solid hotpink;
+}
+
+#topnav {
+    border: 2px solid rebeccapurple;
+}
+
+#lownav {
+    border: 2px solid darkgoldenrod;
+}
+
+main {
+    border: 2px solid limegreen;
+}
+
+div {
+    border: 2px black;
 }
 
 nav > a {
     text-decoration: none;
 }
+
+h3 {
+    color: black;
+}
+
+h2 {
+    color: black;
+}
+
+main > .bannerbckg{
+    display: grid;
+    margin: 15px, 0, 0, 10px;
+    color: white;
+}
+
+.h1banner{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    
+}
+
+#roll{
+    max-width: none;
+    position: absolute;
+    left: 0;
+    bottom: 10%;
+    z-index: -1;
+}
+
+
+.announcebanner{
+    display: grid;
+    background-color: #00b0ad;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+}
+
+#snow{
+    height: 100px;
+}
+
+#arrow{
+    height: 30px;
+    border: 2px red solid;
+    border-radius: 100px;
+    
+}
+
+.announcebanner > p{
+    font-size: 26px;
+}
+
+#join {
+    border: 3px dotted rgb(255, 0, 212);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-auto-rows: min-content;
+}
+
+.midpage {
+    display: grid;
+    margin-top: 100px;
+    border: 3px solid black;
+    grid-template-columns: repeat(auto-fit, minmax(25vh, 1fr)) ;
+    column-gap: 20px;
+    /* justify-items: center; */
+    /* align-items: center; */
+    align-items: top;
+
+}
+
+
+#inform{
+    border: 4px dotted orange;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+
+
+
+
+footer {
+    display: grid;
+    background-image: url(https://res.cloudinary.com/altaskiarea/image/upload/f_auto,q_auto/v1629242835/resources/Media/photos/2021-22/RM-3-10-21q7.jpg);
+    background-color: whitesmoke;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    height: 20vh;
+}
+
+#Bottomnav{
+    display: grid;
+    height: 10vh;
+    grid-auto-rows: min-content;
+    align-items: end;
+    position: absolute;
+    bottom: 10px;
+}
+
+
+
+
+
