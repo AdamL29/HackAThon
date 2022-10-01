@@ -1,46 +1,57 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #logo {
-    height: 150px;
+    height: 15vh;
 }
-img {
-    height: 35vh;
-}
+/* img {
+    height: 75vh;
+} */
 
-/* to be removed later */
-body {
-    border: 2px solid blue;
-}
 html {
     background-color: whitesmoke;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-header {
-    border: 2px solid hotpink;
-}
-
 #topnav {
-    border: 2px solid rebeccapurple;
+    color: white;
+    /* padding-right: 100px; */
+    margin-left: 775px;
+    font-size: 1.5rem;
+    font-weight: 350;
 }
-
+#weather {
+    padding: 5px 15px;
+    border: 5px solid red;
+    background-color: red;
+    text-align: center;
+    color: white;
+    
+}
 #lownav {
-    border: 2px solid darkgoldenrod;
+    display: inline-block;
+    padding: 35px;
+    margin-left: 600px;
+    font-size: 1.5rem;
+    text-align: right;
+    font-weight: 650;
 }
 
-main {
-    border: 2px solid limegreen;
+#lownav :hover {
+    text-decoration: underline red;
 }
 
-div {
-    border: 2px black;
+#ban{
+    display: grid;
 }
 
 nav > a {
     text-decoration: none;
+    color: white;
+    margin: 3px;
 }
 
 h3 {
@@ -51,7 +62,7 @@ h2 {
     color: black;
 }
 
-main > .bannerbckg{
+.bannerbckg{
     display: grid;
     margin: 15px, 0, 0, 10px;
     color: white;
@@ -60,22 +71,42 @@ main > .bannerbckg{
 .h1banner{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    
+    position: absolute;
 }
 
 #roll{
-    max-width: none;
+    width: 100vw;
     position: absolute;
     left: 0;
     bottom: 10%;
     z-index: -1;
 }
 
+#family{
+    font-weight: bolder;
+    position: relative;
+    left: 100px;
+    top: 120px;
+}
+
+#career{
+    font-weight: bolder;
+    position: relative; 
+    left: 120px;
+    top: 0px;
+}
 
 .announcebanner{
     display: grid;
     background-color: #00b0ad;
     grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    width: 40%;
+    max-width: 40%;
+    height: 250px;
+    position: relative;
+    left: 140px;
+    top: 204px;
+    margin-left: 1000px;
 }
 
 #snow{
@@ -83,63 +114,177 @@ main > .bannerbckg{
 }
 
 #arrow{
-    height: 30px;
+    height: 40px;
     border: 2px red solid;
     border-radius: 100px;
-    
+    position: relative;
+    left: 55px;
+    top: 30px;
+}
+
+.buttonar{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax{100px, 1fr});
+    position: relative;
+    top: 150px;
+    left: 50px;
+}
+
+.buttonar:hover{
+    color: red;
 }
 
 .announcebanner > p{
     font-size: 26px;
+    max-width: 250px;
 }
 
 #join {
-    border: 3px dotted rgb(255, 0, 212);
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    grid-auto-rows: min-content;
-}
-
-.midpage {
-    display: grid;
-    margin-top: 100px;
-    border: 3px solid black;
-    grid-template-columns: repeat(auto-fit, minmax(25vh, 1fr)) ;
+    margin-top: 475px;
     column-gap: 20px;
-    /* justify-items: center; */
-    /* align-items: center; */
-    align-items: top;
-
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    position: relative;
+    right: 1px;
+    margin-left: 8%;
+    margin-bottom: 75px;
 }
 
+.midpage > img {
+    position: relative;
+}
 
+.midpage > h2 {
+    position: absolute;
+    text-align: center;
+    padding: 20px;
+    top: 30px;
+    font-size: 1.6rem;
+}
+
+.midpage > h4 {
+    position: absolute;
+    font-size: 1.2rem;
+    padding: 20px;
+    top: 100px;
+}
+
+#text > h1 {
+    margin-left: 8%;
+    font-weight: 900;
+    font-size: 3rem;
+
+}
 #inform{
-    border: 4px dotted orange;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    text-align: center;
+    position: relative;
+    margin: 8%;
+    margin-top: 10px;
+}
+
+.info1 > img{
+    height: 500px;
+    z-index: -1;
+    position: relative;
+}
+.info2 > img{
+    height: 500px;
+    z-index: -1;
+    position: relative;
+}
+.info3 > img{
+    height: 500px;
+    z-index: -1;
+    position: relative;
+}
+.info1 > h3{
+    position: absolute;
+    top: 50px;
+    left: 90px;
+    max-width: 300px;
+    text-align: left;
+}
+.info1 > p{
+    font-size: 20px;
+    color: grey;
+    font-weight: 500px;
+    position: absolute;
+    top: 125px;
+    left: 90px;
+}
+.info2 > h3{
+    position: absolute;
+    top: 50px;
+    right: 620px;
+    max-width: 400px;
+    text-align: left;
+}
+.info2 > p{
+    font-size: 20px;
+    color: white;
+    font-weight: 500px;
+    position: absolute;
+    top: 120px;
+    right: 900px;
+}
+.info3 > h3{
+    position: absolute;
+    color: black;
+    top: 50px;
+    right: 230px;
+}
+.info3 > p{
+    font-size: 18px;
+    color: white;
+    font-weight: 500px;
+    position: absolute;
+    top: 90px;
+    right: 340px;
 }
 
 
-
-
-footer {
+#pagefooter {
     display: grid;
     background-image: url(https://res.cloudinary.com/altaskiarea/image/upload/f_auto,q_auto/v1629242835/resources/Media/photos/2021-22/RM-3-10-21q7.jpg);
     background-color: whitesmoke;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    height: 20vh;
-}
-
-#Bottomnav{
     display: grid;
-    height: 10vh;
-    grid-auto-rows: min-content;
-    align-items: end;
-    position: absolute;
-    bottom: 10px;
+    grid-auto-flow: column;
+    grid-template-rows: 30vh;
+    grid-template-columns: 5fr 10fr 5fr;
+    justify-items: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+}
+
+
+#pagefooter > nav {
+    font-size: 15pt;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 
 
+
+#Bottomnav {
+    background-color:black;
+    justify-items: left;
+    align-items: left;
+    grid-template-columns: 50vw 1fr;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20vh, 1fr));
+    column-gap: 0.5vw;
+    margin-bottom: 2vh;
+}
+
+#prights{
+    font-size: 12pt;
+    color: white;
+    justify-items: right;
+    align-items: right;
+}
 
 
